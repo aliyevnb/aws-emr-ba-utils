@@ -15,4 +15,8 @@ Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 ```
 
-Now `cat .ssh/id_rsa` key and add it to script. Include `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`.
+Now `cat .ssh/id_rsa` key and add it to script. Include `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`. Same with the `id_rsa.pub` key, 
+
+Please note, script will setup keys so you can access any node in withing cluster using *private* ip or hostname. Configuration is setup that you get from master node to any task or core nodes, *not* between core or task nodes.
+
+Enjoy!
